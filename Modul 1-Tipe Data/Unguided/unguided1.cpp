@@ -2,34 +2,32 @@
 using namespace std;
 
 // Deklarasi fungsi untuk menghitung rata-rata
-float hitungRataRata(int nilai1, int nilai2, int nilai3) {
-  float rataRata = (nilai1 + nilai2 + nilai3) / 3.0f;
-  return rataRata;
+float hitungratarata(int nilai1, int nilai2, int nilai3) {
+  float ratarata = (nilai1 + nilai2 + nilai3) / 3.0f;
+  return ratarata;
 }
 
 // Fungsi utama
 int main() {
   // Deklarasi variabel
-  int nilaiMatematika;
-  int nilaiFisika;
-  int nilaiKimia;
-  float rataRata;
+  int nilaimatematika, nilaifisika, nilaikimia;
+  float ratarata;
 
   // Memasukkan nilai ujian
   cout << "Masukkan nilai Matematika: ";
-  cin >> nilaiMatematika;
+  cin >> nilaimatematika;
 
   cout << "Masukkan nilai Fisika: ";
-  cin >> nilaiFisika;
+  cin >> nilaifisika;
 
   cout << "Masukkan nilai Kimia: ";
-  cin >> nilaiKimia;
+  cin >> nilaikimia;
 
   // Menghitung rata-rata nilai
-  rataRata = hitungRataRata(nilaiMatematika, nilaiFisika, nilaiKimia);
+  ratarata = hitungratarata(nilaimatematika, nilaifisika, nilaikimia);
 
   // Menampilkan hasil
-  cout << "Rata-rata nilai: " << rataRata << endl;
+  cout << "Rata-rata nilai: " << ratarata << endl;
 
   return 0;
 }
