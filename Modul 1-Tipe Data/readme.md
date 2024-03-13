@@ -190,12 +190,14 @@ Tipe data primitif adalah jenis data dasar yang digunakan untuk menyimpan nilai 
 
 ### 2. Jelaskan fungsi dari class dan struct secara detail dan berikan contoh programnya
 #### Class
-Fungsi: 
+Fungsi:
+<pre> 
 -Mendefinisikan tipe data baru: Class memungkinkan untuk membuat tipe data baru yang kompleks dengan anggota data (variabel) dan fungsi (metode).
 -Enkapsulasi data: Class melindungi data anggotanya dengan menyembunyikannya dan hanya memungkinkan akses melalui metode.
 -Abstraksi: Class menyembunyikan detail implementasi dan hanya menunjukkan antarmuka yang dapat digunakan oleh program lain.
 -Modularitas: Class memungkinkan untuk mengelompokkan kode terkait dan meningkatkan keterbacaan dan kemudahan penggunaan.
 -Hierarki: Class dapat mewarisi properti dan metode dari class lain, memungkinkan reuse kode dan pembuatan hierarki kelas.
+</pre>
 
 ### Contoh Program:
 
@@ -262,9 +264,11 @@ Program ini menunjukkan contoh penggunaan class untuk menyimpan dan mengelola da
 
 #### Struct
 Fungsi:
+<pre>
 -Mirip dengan class: Struct memiliki fungsi yang mirip dengan class dalam mendefinisikan tipe data baru dengan anggota data dan fungsi.
 -Perbedaan utama: Secara default, anggota data struct bersifat public, sedangkan anggota data class bersifat private.
 -Kesederhanaan: Struct umumnya digunakan untuk struktur data sederhana yang tidak memerlukan enkapsulasi data yang ketat.
+</pre>
 
 ### Contoh Program
 
@@ -291,7 +295,7 @@ int main()
 }
 ```
 ### Output
-![alt text](<Cuplikan layar 2024-03-13 215309-1.png>)
+![alt text](<Cuplikan layar 2024-03-13 215309.png>)
 
 Pada program diatas, struct 'tanggal' mendefenisikan struktur data sederhana untuk menyimpan tanggal. Anggota datanya bersifat public secara default. program ini langsung mengakses dan memodifikasi anggota data tanggal tanpa metode khusus.
 
@@ -342,12 +346,14 @@ Program tersebut menggunakan struct 'mahasiswa' untuk menyimpan nama dan IPK mah
 Konsep array adalah struktur data yang menyimpan koleksi elemen berurutan dalam memori. Elemen diakses menggunakan indeks numerik yang dimulai dari 0. Misalnya, elemen pertama memiliki indeks 0, elemen kedua memiliki indeks 1, dan seterusnya. Elemen dalam array dapat memiliki nilai yang sama. Kita bisa memiliki banyak elemen dengan nilai "apple" di dalam array. Dalam array, elemen diproses atau diakses berdasarkan urutannya. Array cocok untuk menyimpan data yang perlu diproses atau diakses secara berurutan. Misalnya, daftar nilai ujian siswa, antrian pesan, atau koordinat dalam game.
 
 #### Map
-Konsep: Map adalah struktur data yang menyimpan koleksi elemen dalam bentuk pasangan kunci-nilai (key-value). Nilai diakses menggunakan kunci (key) yang bersifat unik. Tidak boleh ada duplikasi kunci dalam map. Kunci dalam map harus unik, tetapi nilai dapat memiliki duplikat. Urutan elemen dalam map tidak relevan dan bisa berubah-ubah. Map cocok untuk menyimpan data yang perlu diakses dengan cepat berdasarkan pengenal unik. Misalnya, data mahasiswa dengan NIM sebagai kunci.
+Konsep Map adalah struktur data yang menyimpan koleksi elemen dalam bentuk pasangan kunci-nilai (key-value). Nilai diakses menggunakan kunci (key) yang bersifat unik. Tidak boleh ada duplikasi kunci dalam map. Kunci dalam map harus unik, tetapi nilai dapat memiliki duplikat. Urutan elemen dalam map tidak relevan dan bisa berubah-ubah. Map cocok untuk menyimpan data yang perlu diakses dengan cepat berdasarkan pengenal unik. Misalnya, data mahasiswa dengan NIM sebagai kunci.
 
 
 ## Kesimpulan
 
 ## Referensi
+<pre>
 [1] https://www.codepolitan.com/interactive-coding/php/lessons/34/
 [2] https://en.cppreference.com/book/intro/classes
 [3] https://www.geeksforgeeks.org/difference-between-array-and-map/ 
+</pre>
