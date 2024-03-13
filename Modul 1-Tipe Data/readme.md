@@ -189,7 +189,7 @@ Program diatas menggunakan dua tipe data primitif: 'int' untuk menyimpan nilai u
 Tipe data primitif adalah jenis data dasar yang digunakan untuk menyimpan nilai sederhana. Contoh tipe data primitif seperti int(bilangan bulat), float(bilangan desimal), char(karakter) dan bool(nilai boolean). Masing-masing tipe data primitif memiliki ukuran memori dan jangkauan nilai yang berbeda. Tipe data primitif digunakan dalam berbagai program untuk menyimpan dan memproses data.
 
 ### 2. Jelaskan fungsi dari class dan struct secara detail dan berikan contoh programnya
-#### Class
+### Class
 Fungsi:
 <pre> 
 -Mendefinisikan tipe data baru: Class memungkinkan untuk membuat tipe data baru yang kompleks dengan anggota data (variabel) dan fungsi (metode).
@@ -258,11 +258,11 @@ int main()
 }
 ```
 ### Output
-![alt text](<Cuplikan layar 2024-03-13 212241.png>)
+![alt text](<Cuplikan layar 2024-03-13 234954.png>)
 
 Program ini menunjukkan contoh penggunaan class untuk menyimpan dan mengelola data mahasiswa. Class 'Mahasiswa' menyediakan metode untuk mengakses dan memanipulasi data anggota, dan fungsi 'main' menunjukkan cara menggunakan class untuk menyimpan dan menampilkan informasi mahasiswa.
 
-#### Struct
+### Struct
 Fungsi:
 <pre>
 -Mirip dengan class: Struct memiliki fungsi yang mirip dengan class dalam mendefinisikan tipe data baru dengan anggota data dan fungsi.
@@ -295,7 +295,7 @@ int main()
 }
 ```
 ### Output
-![alt text](<Cuplikan layar 2024-03-13 215309.png>)
+![alt text](<Cuplikan layar 2024-03-13 235032.png>)
 
 Pada program diatas, struct 'tanggal' mendefenisikan struktur data sederhana untuk menyimpan tanggal. Anggota datanya bersifat public secara default. program ini langsung mengakses dan memodifikasi anggota data tanggal tanpa metode khusus.
 
@@ -338,7 +338,7 @@ return 0;
 }
 ```
 ### Output
-![alt text](<Cuplikan layar 2024-03-13 222059.png>)
+![alt text](<Cuplikan layar 2024-03-13 235118.png>)
 
 Program tersebut menggunakan struct 'mahasiswa' untuk menyimpan nama dan IPK mahasiswa. Dan juga penggunaan map pada 'datamahasiswa' untuk menyimpan data mahasiswa dengan NIM sebagai kunci dan objek 'mahasiswa' sebagai nilai. Program ini berinteraksi dengan pengguna untuk mencari data mahasiswa berdasarkan NIM.
 
