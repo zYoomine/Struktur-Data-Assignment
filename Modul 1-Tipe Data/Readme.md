@@ -8,6 +8,7 @@ Berikan penjelasan teori terkait materi modul ini dengan bahasa anda sendiri ser
 ## Guided 
 
 ### 1. Tipe Data Primitif
+
 ```C++
 #include <iostream>
 using namespace std;
@@ -49,6 +50,7 @@ int main()
 Kode diastas adalah kalkulator sederhana yang menggunakan tipe data primitif 'char' untuk operator dan 'float' untuk angka desimal, memungkinkan pengguna melakukan operasi aritmatika dasar.
 
 ### 2. Tipe Data Abstrak
+
 ```C++
 #include <iostream>
 
@@ -87,6 +89,7 @@ int main()
 Kode diatas menunjukkan bagaimana struct dapat digunakan untuk mengelompokkan data terkait dan mengaksesnya dengan mudah. Struct merupakan contoh tipe data abstrak yang memungkinkan pengguna mendefinisikan struktur data mereka sendiri.
 
 ### 3. Tipe Data Koleksi
+
 ```C+++
 #include <iostream>
 using namespace std;
@@ -114,24 +117,48 @@ Kode diatas menggunkan array yang berfungsi untuk menyimpan data secara beruruta
 
 ## Unguided 
 
-### 1. [Soal]
+### 1. Buatlah program menggunakan tipe data primitif minimal dua fungsi dan bebas.
+Menampilkan program, jelaskan program tersebut dan ambil kesimpulan dari 
+materi tipe data primitif! 
 
 ```C++
 #include <iostream>
 using namespace std;
 
+// Deklarasi fungsi untuk menghitung rata-rata
+float hitungRataRata(int nilai1, int nilai2, int nilai3) {
+  float ratarata = (nilai1 + nilai2 + nilai3) / 3.0f;
+  return ratarata;
+}
+
+// Fungsi utama
 int main() {
-    cout << "ini adalah file code unguided praktikan" << endl;
-    return 0;
+  // Deklarasi variabel
+  int nilaimatematika, nilaifisika, nilaikimia;
+  float ratarata;
+
+  // Memasukkan nilai ujian
+  cout << "Masukkan nilai Matematika: ";
+  cin >> nilaimatematika;
+
+  cout << "Masukkan nilai Fisika: ";
+  cin >> nilaifisika;
+
+  cout << "Masukkan nilai Kimia: ";
+  cin >> nilaikimia;
+
+  // Menghitung rata-rata nilai
+  ratarata = hitungRataRata(nilaimatematika, nilaifisika, nilaikimia);
+
+  // Menampilkan hasil
+  cout << "Rata-rata nilai: " << ratarata << endl;
+
+  return 0;
 }
 ```
 #### Output:
-![alt text](<Cuplikan layar 2024-03-13 114931.png>)(https://github.com/suxeno/Struktur-Data-Assignment/assets/111122086/6d1727a8-fb77-4ecf-81ff-5de9386686b7)
-
+![alt text](<Cuplikan layar 2024-03-13 142251.png>)
 Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
-
-#### Full code Screenshot:
-![240309_10h21m35s_screenshot](https://github.com/suxeno/Struktur-Data-Assignment/assets/111122086/41e9641c-ad4e-4e50-9ca4-a0215e336b04)
 
 
 ## Kesimpulan
