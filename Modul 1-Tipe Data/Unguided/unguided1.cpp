@@ -3,8 +3,8 @@ using namespace std;
 
 // Deklarasi fungsi untuk menghitung rata-rata
 float hitungratarata(int nilai1, int nilai2, int nilai3) {
-  float ratarata = (nilai1 + nilai2 + nilai3) / 3.0f;
-  return ratarata;
+float ratarata = (nilai1 + nilai2 + nilai3) / 3.0f;
+return ratarata;
 }
 
 // Fungsi utama
