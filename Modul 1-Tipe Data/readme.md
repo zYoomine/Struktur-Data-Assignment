@@ -2,8 +2,34 @@
 <p align="center">Muhammad Ragiel Prastyo</p>
 
 ## Dasar Teori
+Tipe data adalah sebuah pengklasifikasian data berdasarkan jenis data tersebut. Tipe data dibutuhkan agar kompiler dapat mengetahui bagaimana sebuah data akan digunakan. Tipe data yang akan dipelajari adalah sebagai berikut:
+<pre>
+1. Tipe Data Primitif
+2. Tipe Data Abstrak
+3. Tipe Data Koleksi
+</pre>
 
+### Tipe Data Primitif
+Tipe data primitif bagaikan batu bata pembangun program. Telah disediakan oleh bahasa pemrograman, mereka menyimpan data dasar seperti angka huruf, dan nilai benar/salah. Jumlah bit yang dialokasikan untuk setiap tipe data, tergantung pada bahasa pemrograman, compiler, dan sistem operasi.
+Contoh dari tipe data primitif:
+<pre>
+1. Int: Menyimpan bilangan bulat.
+2. Float: Menyimpan bilangan desimal.
+3. Char: Menyimpan karakter.
+4. Boolean: Menyimpan nilai benar/salah.
+</pre>
 
+### Tipe Data Abstrak
+Tipe data abstrak atau Abstrak Data Tipe(ADT) adalah tipe data buatan programmer dengan fleksibilitas tinggi. Tipe data ini dapat menyimpan berbagai jenis data, tidak hanya satu, kita dapat membuatnya sendiri. Fitur Class(C++) dan Struct(C) mirip kotak penyimpanan data dan Membungkus berbagai jenis data menjadi satu kesatuan. Perbedaannya Struct itu akses data secara default terbuka (public) sedangkan Class adalah Akses data secara default tersembunyi (private).
+
+### Tipe Data Koleksi
+Tipe data koleksi dapat menyimpan banyak data yang bisa disimpan dengan rapi dan terstruktur. Ada beberapa tipe data koleksi yang umum 
+digunakan dalam pemrograman, dan di antaranya adalah:
+<pre>
+1. Array: Menyimpan data dengan tipe sama dan akses menggunakan indeks, seperti kotak penyimpanan sepatu.
+2. Vector: Mirip array, tapi lebih fleksibel. Kapasitasnya dapat bertambah otomatis, seperti rak buku yang dapat menampung buku baru.
+3. Map: Menyimpan data dengan "kunci" unik, layaknya lemari arsip dengan kode unik untuk setiap dokumen.
+</pre>
 
 ## Guided
 
@@ -117,9 +143,7 @@ Kode diatas menggunkan array yang berfungsi untuk menyimpan data secara beruruta
 
 ## Unguided
 
-### 1. Buatlah program menggunakan tipe data primitif minimal dua fungsi dan bebas. 
-Menampilkan program, jelaskan program tersebut dan ambil kesimpulan dari 
-materi tipe data primitif!
+### 1. Buatlah program menggunakan tipe data primitif minimal dua fungsi dan bebas. Menampilkan program, jelaskan program tersebut dan ambil kesimpulan dari materi tipe data primitif!
 
 ```C++
 #include <iostream>
@@ -158,3 +182,172 @@ int main() {
 ```
 ### Output:
 ![alt text](<Cuplikan layar 2024-03-13 142251.png>)
+
+Program diatas menggunakan dua tipe data primitif: 'int' untuk menyimpan nilai ujian dan 'float' untuk menyimpan nilai rata-rata. Pada program ini juga menggunakan dua fungsi: 'hitungratarata' untuk menghitung rata-rata dari tiga nilai integer dan mengembalikan nilai float. 'main' sebagai fungsi utama yang mengelola input, perhitungan, dan output.
+
+### Kesimpulan Tipe Data Primitif
+Tipe data primitif adalah jenis data dasar yang digunakan untuk menyimpan nilai sederhana. Contoh tipe data primitif seperti int(bilangan bulat), float(bilangan desimal), char(karakter) dan bool(nilai boolean). Masing-masing tipe data primitif memiliki ukuran memori dan jangkauan nilai yang berbeda. Tipe data primitif digunakan dalam berbagai program untuk menyimpan dan memproses data.
+
+### 2. Jelaskan fungsi dari class dan struct secara detail dan berikan contoh programnya
+#### Class
+Fungsi: 
+-Mendefinisikan tipe data baru: Class memungkinkan untuk membuat tipe data baru yang kompleks dengan anggota data (variabel) dan fungsi (metode).
+-Enkapsulasi data: Class melindungi data anggotanya dengan menyembunyikannya dan hanya memungkinkan akses melalui metode.
+-Abstraksi: Class menyembunyikan detail implementasi dan hanya menunjukkan antarmuka yang dapat digunakan oleh program lain.
+-Modularitas: Class memungkinkan untuk mengelompokkan kode terkait dan meningkatkan keterbacaan dan kemudahan penggunaan.
+-Hierarki: Class dapat mewarisi properti dan metode dari class lain, memungkinkan reuse kode dan pembuatan hierarki kelas.
+
+### Contoh Program:
+
+```C++
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Mahasiswa {
+private:
+  string nama;
+  string nim;
+  float ipk;
+
+public:
+  // Setter dan getter untuk nama, nim dan ipk
+  void setnama(string nilai) {
+    nama = nilai;
+  }
+
+  string getnama() const {
+    return nama;
+  }
+
+  void setnim(string nilai) {
+    nim = nilai;
+  }
+
+  string getnim() const {
+    return nim;
+  }
+
+  void setIpk(float nilai) {
+    ipk = nilai;
+  }
+
+  float getIpk() const {
+    return ipk;
+  }
+
+  // Menampilkan detail mahasiswa
+  void cetakInfo() {
+    cout << "Nama: " << getnama() << endl;
+    cout << "NIM: " << getnim() << endl;
+    cout << "IPK: " << getIpk() << endl;  
+  }
+};
+
+int main() 
+{
+    Mahasiswa mhs1;
+    mhs1.setnama("Bagas Dribble");
+    mhs1.setnim("12345678");
+    mhs1.setIpk(3.6);
+    cout << "Data Mahasiswa: \n";
+    mhs1.cetakInfo();
+    return 0;
+}
+```
+### Output
+![alt text](<Cuplikan layar 2024-03-13 212241.png>)
+
+Program ini menunjukkan contoh penggunaan class untuk menyimpan dan mengelola data mahasiswa. Class 'Mahasiswa' menyediakan metode untuk mengakses dan memanipulasi data anggota, dan fungsi 'main' menunjukkan cara menggunakan class untuk menyimpan dan menampilkan informasi mahasiswa.
+
+#### Struct
+Fungsi:
+-Mirip dengan class: Struct memiliki fungsi yang mirip dengan class dalam mendefinisikan tipe data baru dengan anggota data dan fungsi.
+-Perbedaan utama: Secara default, anggota data struct bersifat public, sedangkan anggota data class bersifat private.
+-Kesederhanaan: Struct umumnya digunakan untuk struktur data sederhana yang tidak memerlukan enkapsulasi data yang ketat.
+
+### Contoh Program
+
+```C++
+#include <iostream>
+using namespace std;
+
+struct tanggal 
+{
+    int hari;
+    int bulan;
+    int tahun;
+};
+
+int main() 
+{
+    tanggal hariIni;
+    hariIni.hari = 13;
+    hariIni.bulan = 3;
+    hariIni.tahun = 2024;
+    
+    cout << "Tanggal hari ini: " << hariIni.hari << "/" << hariIni.bulan << "/" << hariIni.tahun << endl;
+    return 0;
+}
+```
+### Output
+![alt text](<Cuplikan layar 2024-03-13 215309-1.png>)
+
+Pada program diatas, struct 'tanggal' mendefenisikan struktur data sederhana untuk menyimpan tanggal. Anggota datanya bersifat public secara default. program ini langsung mengakses dan memodifikasi anggota data tanggal tanpa metode khusus.
+
+### 3. Buat dan jelaskan program menggunakan fungsi map dan jelaskan perbedaan dari array dengan map.
+
+```C++
+#include <iostream>
+#include <map>
+#include <string>
+using namespace std;
+
+struct mahasiswa 
+{
+    string nama;
+    float ipk;
+};
+
+int main() 
+{
+    map <string, mahasiswa> datamahasiswa;
+
+    // Menambahkan data mahasiswa ke map
+    datamahasiswa["12345678"] = {"Bagas Dribble", 3.8};
+    datamahasiswa["87654321"] = {"Windah Tol Cipularang", 3.5};
+
+    // Mencari data mahasiswa dengan NIM
+    string nim;
+    cout << "Masukkan NIM: ";
+    cin >> nim;
+
+    if (datamahasiswa.find(nim) != datamahasiswa.end()) 
+    {
+        mahasiswa mahasiswa = datamahasiswa[nim];
+        cout << "Nama: " << mahasiswa.nama << endl;
+        cout << "IPK: " << mahasiswa.ipk << endl;
+    } else {
+        cout << "NIM tidak ditemukan." << endl;
+    }
+return 0;
+}
+```
+### Output
+![alt text](<Cuplikan layar 2024-03-13 222059.png>)
+
+Program tersebut menggunakan struct 'mahasiswa' untuk menyimpan nama dan IPK mahasiswa. Dan juga penggunaan map pada 'datamahasiswa' untuk menyimpan data mahasiswa dengan NIM sebagai kunci dan objek 'mahasiswa' sebagai nilai. Program ini berinteraksi dengan pengguna untuk mencari data mahasiswa berdasarkan NIM.
+
+#### Array
+Konsep array adalah struktur data yang menyimpan koleksi elemen berurutan dalam memori. Elemen diakses menggunakan indeks numerik yang dimulai dari 0. Misalnya, elemen pertama memiliki indeks 0, elemen kedua memiliki indeks 1, dan seterusnya. Elemen dalam array dapat memiliki nilai yang sama. Kita bisa memiliki banyak elemen dengan nilai "apple" di dalam array. Dalam array, elemen diproses atau diakses berdasarkan urutannya. Array cocok untuk menyimpan data yang perlu diproses atau diakses secara berurutan. Misalnya, daftar nilai ujian siswa, antrian pesan, atau koordinat dalam game.
+
+#### Map
+Konsep: Map adalah struktur data yang menyimpan koleksi elemen dalam bentuk pasangan kunci-nilai (key-value). Nilai diakses menggunakan kunci (key) yang bersifat unik. Tidak boleh ada duplikasi kunci dalam map. Kunci dalam map harus unik, tetapi nilai dapat memiliki duplikat. Urutan elemen dalam map tidak relevan dan bisa berubah-ubah. Map cocok untuk menyimpan data yang perlu diakses dengan cepat berdasarkan pengenal unik. Misalnya, data mahasiswa dengan NIM sebagai kunci.
+
+
+## Kesimpulan
+
+## Referensi
+[1] https://www.codepolitan.com/interactive-coding/php/lessons/34/
+[2] https://en.cppreference.com/book/intro/classes
+[3] https://www.geeksforgeeks.org/difference-between-array-and-map/ 
