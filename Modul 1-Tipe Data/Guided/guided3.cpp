@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-     //deklarasi dan inisialisasi array 
+    //deklarasi dan inisialisasi array 
     int nilai[5]; 
     nilai[0] = 23; 
     nilai[1] = 50; 
