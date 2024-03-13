@@ -342,14 +342,15 @@ return 0;
 
 Program tersebut menggunakan struct 'mahasiswa' untuk menyimpan nama dan IPK mahasiswa. Dan juga penggunaan map pada 'datamahasiswa' untuk menyimpan data mahasiswa dengan NIM sebagai kunci dan objek 'mahasiswa' sebagai nilai. Program ini berinteraksi dengan pengguna untuk mencari data mahasiswa berdasarkan NIM.
 
-#### Array
+### Array
 Konsep array adalah struktur data yang menyimpan koleksi elemen berurutan dalam memori. Elemen diakses menggunakan indeks numerik yang dimulai dari 0. Misalnya, elemen pertama memiliki indeks 0, elemen kedua memiliki indeks 1, dan seterusnya. Elemen dalam array dapat memiliki nilai yang sama. Kita bisa memiliki banyak elemen dengan nilai "apple" di dalam array. Dalam array, elemen diproses atau diakses berdasarkan urutannya. Array cocok untuk menyimpan data yang perlu diproses atau diakses secara berurutan. Misalnya, daftar nilai ujian siswa, antrian pesan, atau koordinat dalam game.
 
-#### Map
+### Map
 Konsep Map adalah struktur data yang menyimpan koleksi elemen dalam bentuk pasangan kunci-nilai (key-value). Nilai diakses menggunakan kunci (key) yang bersifat unik. Tidak boleh ada duplikasi kunci dalam map. Kunci dalam map harus unik, tetapi nilai dapat memiliki duplikat. Urutan elemen dalam map tidak relevan dan bisa berubah-ubah. Map cocok untuk menyimpan data yang perlu diakses dengan cepat berdasarkan pengenal unik. Misalnya, data mahasiswa dengan NIM sebagai kunci.
 
 
 ## Kesimpulan
+Kesimpulannya materi yang diberi pada modul 1 kali ini masih mudah dipahami.
 
 ## Referensi
 <pre>
