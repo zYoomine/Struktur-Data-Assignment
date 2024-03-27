@@ -9,7 +9,7 @@ Tipe data adalah sebuah pengklasifikasian data berdasarkan jenis data tersebut. 
 3. Tipe Data Koleksi
 </pre>
 
-### Tipe Data Primitif
+### 1. Tipe Data Primitif
 Tipe data primitif bagaikan batu bata pembangun program. Telah disediakan oleh bahasa pemrograman, mereka menyimpan data dasar seperti angka huruf, dan nilai benar/salah. Jumlah bit yang dialokasikan untuk setiap tipe data, tergantung pada bahasa pemrograman, compiler, dan sistem operasi.
 Contoh dari tipe data primitif:
 <pre>
@@ -19,10 +19,10 @@ Contoh dari tipe data primitif:
 4. Boolean: Menyimpan nilai benar/salah.
 </pre>
 
-### Tipe Data Abstrak
+### 2. Tipe Data Abstrak
 Tipe data abstrak atau Abstrak Data Tipe(ADT) adalah tipe data buatan programmer dengan fleksibilitas tinggi. Tipe data ini dapat menyimpan berbagai jenis data, tidak hanya satu, kita dapat membuatnya sendiri. Fitur Class(C++) dan Struct(C) mirip kotak penyimpanan data dan Membungkus berbagai jenis data menjadi satu kesatuan. Perbedaannya Struct itu akses data secara default terbuka (public) sedangkan Class adalah Akses data secara default tersembunyi (private).
 
-### Tipe Data Koleksi
+### 3. Tipe Data Koleksi
 Tipe data koleksi dapat menyimpan banyak data yang bisa disimpan dengan rapi dan terstruktur. Ada beberapa tipe data koleksi yang umum 
 digunakan dalam pemrograman, dan di antaranya adalah:
 <pre>
