@@ -307,7 +307,5 @@ Array adalah struktur data yang mendasar, digunakan untuk menyimpan data dengan 
 Untuk praktikum pada modul kali ini cukup bisa dimengerti.
 
 ## Referensi
-<pre>
 [1] https://www.w3schools.com/cpp/cpp_arrays.asp
 [2] https://www.petanikode.com/cpp-array/
-</pre>
