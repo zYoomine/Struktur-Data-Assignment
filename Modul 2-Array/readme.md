@@ -308,4 +308,5 @@ Untuk praktikum pada modul kali ini cukup bisa dimengerti.
 
 ## Referensi
 [1] https://www.w3schools.com/cpp/cpp_arrays.asp
+
 [2] https://www.petanikode.com/cpp-array/
