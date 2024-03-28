@@ -353,8 +353,8 @@ Konsep Map adalah struktur data yang menyimpan koleksi elemen dalam bentuk pasan
 Kesimpulannya materi yang diberi pada modul 1 kali ini masih mudah dipahami.
 
 ## Referensi
-<pre>
 [1] https://www.codepolitan.com/interactive-coding/php/lessons/34/
+
 [2] https://en.cppreference.com/book/intro/classes
+
 [3] https://www.geeksforgeeks.org/difference-between-array-and-map/ 
-</pre>
