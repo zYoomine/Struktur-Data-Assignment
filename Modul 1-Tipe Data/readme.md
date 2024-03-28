@@ -1,5 +1,7 @@
 # <h1 align="center">Laporan Praktikum Modul 1 Tipe Data</h1>
 <p align="center">Muhammad Ragiel Prastyo</p>
+<p align="center">2311102183</p>
+<p align="center">S1IF-11-E</p>
 
 ## Dasar Teori
 Tipe data adalah sebuah pengklasifikasian data berdasarkan jenis data tersebut. Tipe data dibutuhkan agar kompiler dapat mengetahui bagaimana sebuah data akan digunakan. Tipe data yang akan dipelajari adalah sebagai berikut:
