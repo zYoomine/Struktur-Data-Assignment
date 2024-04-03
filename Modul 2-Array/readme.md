@@ -1,5 +1,7 @@
 # <h1 align="center">Laporan Praktikum Modul 2 Array</h1>
 <p align="center">Muhammad Ragiel Prastyo</p>
+<p align="center">2311102183</p>
+<p align="center">S1IF-11-E</p>
 
 ## Dasar Teori
 Array merupakan struktur data yang paling dasar. Array adalah kumpulan data dengan tipe yang sama yang disimpan secara berurutan di dalam memori komputer. Berikut ini adalah beberapa jenis array :
