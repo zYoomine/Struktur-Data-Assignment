@@ -552,7 +552,7 @@ Program ini merupakan implementasi dari operasi dasar pada linked list circular.
 ### Buatlah program menu Linked List Circular untuk menyimpan Nama dan NIM mahasiswa, dengan menggunakan input dari user. Dengan perintah seperti dibawah ini:
 1. Buatlah menu untuk menambahkan, mengubah, menghapus, dan melihat Nama dan NIM mahasiswa.
 2. Setelah membuat menu tersebut, masukkan data sesuai urutan berikut, lalu tampilkan data yang telah dimasukkan. (Gunakan insert depan, belakang atau tengah)
-<p>
+
 Nama 	NIM 
 Jawad 	23300001 
 [Nama Anda] 	[NIM Anda] 
@@ -564,7 +564,7 @@ Gahar 	23300040
 Udin 	23300048 
 Ucok 	23300050 
 Budi 	23300099 
-</p>
+
 3. Lakukan perintah berikut: 
 - Tambahkan data berikut diantara Farrel dan Denis: 
 	Wati 	2330004 
