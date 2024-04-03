@@ -554,15 +554,25 @@ Program ini merupakan implementasi dari operasi dasar pada linked list circular.
 2. Setelah membuat menu tersebut, masukkan data sesuai urutan berikut, lalu tampilkan data yang telah dimasukkan. (Gunakan insert depan, belakang atau tengah)
 
 Nama 	NIM 
+
 Jawad 	23300001 
+
 [Nama Anda] 	[NIM Anda] 
+
 Farrel 	23300003 
+
 Denis 	23300005 
+
 Anis 	23300008 
+
 Bowo 	23300015 
+
 Gahar 	23300040 
+
 Udin 	23300048 
+
 Ucok 	23300050 
+
 Budi 	23300099 
 
 3. Lakukan perintah berikut: 
