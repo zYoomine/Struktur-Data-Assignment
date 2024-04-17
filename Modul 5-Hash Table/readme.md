@@ -9,10 +9,12 @@
 
 ### 1. Pengertian Hash Table
 Struktur data Hash Table adalah struktur data yang digunakan untuk menyimpan dan mengelola data dengan cepat dan efisien. Ini beroperasi dengan prinsip kunci-nilai, di mana setiap elemen data memiliki kunci yang unik yang digunakan untuk mengakses atau memanipulasinya. Hash Table (Tabel Hash) adalah struktur data yang mengorganisir data ke dalam pasangan kunci-nilai. Ini menggunakan fungsi hash untuk mengonversi kunci menjadi indeks dalam array. Dengan cara ini, akses ke data menjadi sangat cepat karena kita dapat langsung menghitung indeks tempat data disimpan. Ini cocok untuk pencarian, penyisipan, penghapusan, dan pembaruan data dalam waktu konstan , asalkan tidak ada konflik dalam fungsi hash (collision)[1].
+
 Tabel hash adalah struktur data yang digunakan untuk menyimpan pasangan kunci/nilai. Ia menggunakan fungsi hash untuk menghitung indeks ke dalam array di mana elemen akan dimasukkan atau dicari. Dengan menggunakan fungsi hash yang baik maka hashing dapat berjalan dengan baik. Berdasarkan asumsi yang masuk akal, waktu rata-rata yang diperlukan untuk mencari elemen dalam tabel hash adalah O(1)[2].
 
 ### 2. Fungsi Hash Table
-Fungsi utamanya pada data adalah mempercepat proses akses data. Hal ini berkaitan dengan peningkatan data dalam jumlah besar yang diproses oleh jaringan data global dan lokal. Hash table adalah solusi untuk membuat proses akses data lebih cepat dan memastikan bahwa data dapat dipertukarkan dengan aman [3]. 
+Fungsi utamanya pada data adalah mempercepat proses akses data. Hal ini berkaitan dengan peningkatan data dalam jumlah besar yang diproses oleh jaringan data global dan lokal. Hash table adalah solusi untuk membuat proses akses data lebih cepat dan memastikan bahwa data dapat dipertukarkan dengan aman [3].
+
 Fungsi hash adalah fungsi apa pun yang dapat digunakan untuk memetakan kumpulan data berukuran sembarang ke kumpulan data berukuran tetap, yang dimasukkan ke dalam tabel hash. Nilai yang dikembalikan oleh fungsi hash disebut nilai hash, kode hash, jumlah hash, atau sekadar hash [2].
 
 ### 3. Operasi Hash Table
