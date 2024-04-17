@@ -18,25 +18,25 @@ Fungsi utamanya pada data adalah mempercepat proses akses data. Hal ini berkaita
 Fungsi hash adalah fungsi apa pun yang dapat digunakan untuk memetakan kumpulan data berukuran sembarang ke kumpulan data berukuran tetap, yang dimasukkan ke dalam tabel hash. Nilai yang dikembalikan oleh fungsi hash disebut nilai hash, kode hash, jumlah hash, atau sekadar hash [2].
 
 ### 3. Operasi Hash Table
-1. Pencarian (Search)
+1. Pencarian (Search) :
 Digunakan untuk mencari elemen/data dalam Hash Table berdasarkan kunci atau indeksnya. Pencarian dilakukan dengan menggunakan fungsi hash untuk menghasilkan indeks elemen yang dicari.
 
-2. Penyisipan (Insertion)
+2. Penyisipan (Insertion) :
 Operasi ini digunakan untuk menyisipkan elemen/data baru ke dalam Hash Table. Elemen baru akan ditempatkan pada indeks yang dihasilkan oleh fungsi hash.
 
-3. Penghapusan (Deletion)
+3. Penghapusan (Deletion) :
 Digunakan untuk menghapus elemen/data dari Hash Table berdasarkan kunci atau indeksnya. Elemen yang dihapus akan dihapus dari indeks yang dihasilkan oleh fungsi hash.
 
-4. Update
+4. Update :
 Operasi ini digunakan untuk mengubah nilai elemen/data yang sudah ada dalam Hash Table. Nilai elemen dapat diubah berdasarkan kunci atau indeksnya.
 
-5. Collision Handling
+5. Collision Handling :
 Collision terjadi ketika dua atau lebih elemen memiliki indeks yang sama setelah melalui fungsi hash. Operasi ini digunakan untuk menangani collision dan memastikan bahwa elemen-elemen dengan indeks yang sama dapat disimpan dan diakses dengan benar.
 
-6. Resize
+6. Resize :
 Operasi ini digunakan untuk mengubah ukuran Hash Table jika jumlah elemen/data yang disimpan melebihi kapasitas yang ditentukan. Resize dilakukan untuk menjaga efisiensi dan kinerja Hash Table.
 
-7. Iterasi
+7. Iterasi :
 Operasi yang digunakan untuk mengakses dan memproses semua elemen/data yang ada dalam Hash Table secara berurutan.
 
 ### Teknik-Teknik Hash Table
