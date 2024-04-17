@@ -463,6 +463,6 @@ Keuntungan utama dari hash table dibandingkan struktur data lainnya adalah efisi
 ## Referensi
 [1] Annisa. (2023, Sep.19) Struktur Data Hash Table: Pengertian, Cara Kerja dan Operasi Hash Table [online]. Available : https://fikti.umsu.ac.id/struktur-data-hash-table-pengertian-cara-kerja-dan-operasi-hash-table/
 
-[2] https://www-hackerearth-com.translate.goog/practice/data-structures/hash-tables/basics-of-hash-tables/tutorial/?_x_tr_sl=en&_x_tr_tl=id&_x_tr_hl=id&_x_tr_pto=tc
+[2] Hackerearth. [online]. Available : https://www-hackerearth-com.translate.goog/practice/data-structures/hash-tables/basics-of-hash-tables/tutorial/?_x_tr_sl=en&_x_tr_tl=id&_x_tr_hl=id&_x_tr_pto=tc
 
 [3] Algoritma. (2022, Mar.22) Pengertian Hash Table dan Cara Penggunaannya [online]. Available : https://algorit.ma/blog/hash-table-adalah-2022/?avia-element-paging=3#top
