@@ -39,7 +39,7 @@ Operasi ini digunakan untuk mengubah ukuran Hash Table jika jumlah elemen/data y
 7. Iterasi :
 Operasi yang digunakan untuk mengakses dan memproses semua elemen/data yang ada dalam Hash Table secara berurutan.
 
-### Teknik-Teknik Hash Table
+### 4. Teknik-Teknik Hash Table
 Didalam hash table ada dua teknik yang umum digunakan saat data scientist melakukan hash table. Berikut ini penjelasannya:
 1. Hashing
 
