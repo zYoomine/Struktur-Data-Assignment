@@ -35,16 +35,11 @@ bool CekPalindrom(const char* InputKata, int Panjang) {
     }
 
     // Menentukan jumlah dari setengah karakter kedua dari kata yang diinputkan user 
-    int Kedua;
-    if (Panjang % 2 == 0) {
-        Kedua = Panjang / 2;
-    } else if (Panjang % 2 == 1) {
-        Kedua = Panjang / 2 + 1;
-    }
+    int Kedua = (Panjang % 2 == 0) ? Panjang / 2 : Panjang / 2 + 1;
 
     // Membandingkan setengah karakter kedua dengan setengah karakter pertama menggunakan fungsi PeekHurufPertama
     for (int i = Kedua; i < Panjang; i++) {
-        if (PeekHurufPertama() != InputKata[Kedua]) {
+        if (Kata[Top--] != InputKata[i]) {
             return false;
         }
     }

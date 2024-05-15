@@ -207,16 +207,11 @@ bool CekPalindrom(const char* InputKata, int Panjang) {
     }
 
     // Menentukan jumlah dari setengah karakter kedua dari kata yang diinputkan user 
-    int Kedua;
-    if (Panjang % 2 == 0) {
-        Kedua = Panjang / 2;
-    } else if (Panjang % 2 == 1) {
-        Kedua = Panjang / 2 + 1;
-    }
+    int Kedua = (Panjang % 2 == 0) ? Panjang / 2 : Panjang / 2 + 1;
 
     // Membandingkan setengah karakter kedua dengan setengah karakter pertama menggunakan fungsi PeekHurufPertama
     for (int i = Kedua; i < Panjang; i++) {
-        if (PeekHurufPertama() != InputKata[Kedua]) {
+        if (Kata[Top--] != InputKata[i]) {
             return false;
         }
     }
@@ -245,6 +240,10 @@ int main() {
     return 0;
 }
 ```
+### Output
+![alt text](<Cuplikan layar 2024-05-15 224046.png>)
+
+Source code diatas merupakan program untuk memeriksa apakah sebuah kata yang diinputkan oleh pengguna adalah palindrom atau bukan, menggunakan konsep stack untuk membantu pemeriksaan tersebut.
 
 ### 2. Buatlah program untuk melakukan pembalikan terhadap kalimat menggunakan stack dengan minimal 3 kata. Jelaskan output program dan source codenya beserta operasi/fungsi yang dibuat?
 
@@ -303,3 +302,15 @@ int main() {
     return 0;
 }
 ```
+### Output
+![alt text](<Cuplikan layar 2024-05-15 224327.png>)
+
+Source code diatas adalah program untuk membalikkan urutan karakter dalam sebuah kalimat yang diinputkan oleh pengguna. Program ini menggunakan stack untuk membalikkan urutan karakter dalam kalimat, memanfaatkan sifat LIFO (Last In, First Out) dari stack.
+
+## Kesimpulan
+Dalam pemrograman, stack adalah struktur data yang mengikuti prinsip LIFO (Last-In, First-Out), artinya elemen terakhir yang dimasukkan akan menjadi elemen pertama yang diambil. Stack sering digunakan untuk mengelola urutan operasi atau pemanggilan fungsi, di mana elemen baru ditempatkan di atas tumpukan dan elemen terakhir ditarik terlebih dahulu. Operasi utama pada stack ada beberapa seperti, push, pop, peek, int isFull, int isEmpty, int size, dan int top. Operasi-operasi tersebut memungkinkan stack untuk berfungsi efektif dalam mengelola urutan elemen berdasarkan prinsip LIFO.
+
+## Referensi
+[1] Riczky P. (2023, May.20) Memahami Stack dalam Pemrograman: Konsep, Implementasi, dan Penggunaannya [online]. Available : https://medium.com/@furatamarizuki/memahami-stack-dalam-pemrograman-konsep-implementasi-dan-penggunaannya-f1cd57c3e375
+
+[2] Algonz D.B. (2022, Juli.01) Stack: Defenisi, Kekurangan, Jenis Operasi, dan Implementasi [online]. Available : https://www.ekrut.com/media/stack-adalah 
