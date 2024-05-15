@@ -9,32 +9,25 @@ Dalam konteks pemrograman, stack adalah struktur data yang mengikuti prinsip LIF
 Konsep dasar struktur data LIFO (Last-In, First-Out) pada stack adalah bahwa elemen terakhir yang dimasukkan ke dalam stack akan menjadi elemen pertama yang diambil dari stack. Dalam struktur data ini, elemen yang baru ditambahkan (terakhir) akan diletakkan di atas elemen-elemen yang sudah ada sebelumnya, dan ketika elemen diambil, elemen yang terakhir ditambahkan (teratas) akan menjadi yang pertama diambil. Dengan demikian, elemen-elemen yang ada di bawahnya harus diambil terlebih dahulu sebelum mencapai elemen teratas stack.[1]
 
 Stack terdiri dari beberapa jenis operasi, operasi utama dari Stack adalah Push dan Pop, namun terdapat pula operasi tambahan dari Stack yang juga penting. Adapun beberapa jenis operasi Stack adalah sebagai berikut.[2]
-1. Push
-
+1. Push :
 Operasi Push merupakan proses operasi ketika kita ingin memasukkan sebuah elemen atau item ke dalam Stack. 
 
-2. Pop
-
+2. Pop :
 Operasi Pop dilakukan untuk menghapus sebuah elemen atau item dalam Stack.
 
-3. Peek
-
+3. Peek :
 Operasi Peek dilakukan untuk memungkinkan pengguna dapat melihat elemen di atas Stack dengan catatan tidak ada modifikasi apa pun dalam operasi ini.
 
-4. int isFull
-
+4. int isFull :
 Operasi ini dilakukan untuk mengetahui apakah Stack sedang penuh atau tidak.
 
-5. int isEmpty
-
+5. int isEmpty :
 Operasi ini dilakukan untuk mengetahui apakah Stack sedang kosong atau tidak.
 
-6. int size
-
+6. int size :
 Operasi ini dilakukan untuk mengembalikan ukuran Stack atau jumlah total elemen yang ada dalam Stack tersebut.
 
-7. int top
-
+7. int top :
 Operasi ini dilakukan untuk mengembalikan elemen terakhir yang dimasukkan di atas elemen lain tanpa menghapusnya.
 
 ## Guided
