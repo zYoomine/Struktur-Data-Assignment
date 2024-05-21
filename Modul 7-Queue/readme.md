@@ -132,10 +132,217 @@ int main() {
 ### 1. Ubahlah penerapan konsep queue pada bagian guided dari array menjadi linked list
 
 ```C++
+// NAMA : MUHAMMAD RAGIEL PRASTYO
+// NIM  : 2311102183
+#include <iostream>
+using namespace std;
 
+struct Node {
+    string data;
+    Node* next;
+};
+
+Node* front = nullptr; // Penanda antrian depan
+Node* back = nullptr;  // Penanda antrian belakang
+
+// Fungsi pengecekan antrian penuh atau tidak
+bool isFull() {
+    return false; // Linked list tidak memiliki batas maksimal
+}
+
+// Fungsi pengecekan antrian kosong atau tidak
+bool isEmpty() {
+    return front == nullptr;
+}
+
+// Fungsi menambahkan antrian
+void enqueueAntrian(string data) {
+    Node* newNode = new Node();
+    newNode->data = data;
+    newNode->next = nullptr;
+
+    if (isEmpty()) {
+        front = newNode;
+        back = newNode;
+    } else {
+        back->next = newNode;
+        back = newNode;
+    }
+}
+
+// Fungsi mengurangi antrian
+void dequeueAntrian() {
+    if (isEmpty()) {
+        cout << "Antrian kosong" << endl;
+    } else {
+        Node* temp = front;
+        front = front->next;
+        delete temp;
+    }
+}
+
+// Fungsi menghitung banyak antrian
+int countQueue() {
+    int count = 0;
+    Node* temp = front;
+    while (temp != nullptr) {
+        count++;
+        temp = temp->next;
+    }
+    return count;
+}
+
+// Fungsi menghapus semua antrian
+void clearQueue() {
+    while (front != nullptr) {
+        Node* temp = front;
+        front = front->next;
+        delete temp;
+    }
+    back = nullptr;
+}
+
+// Fungsi melihat antrian
+void viewQueue() {
+    cout << "Data antrian teller:" << endl;
+    Node* temp = front;
+    int i = 1;
+    while (temp != nullptr) {
+        cout << i << ". " << temp->data << endl;
+        temp = temp->next;
+        i++;
+    }
+}
+
+int main() {
+    enqueueAntrian("Andi");
+    enqueueAntrian("Maya");
+    viewQueue();
+    cout << "Jumlah antrian = " << countQueue() << endl;
+    dequeueAntrian();
+    viewQueue();
+    cout << "Jumlah antrian = " << countQueue() << endl;
+    clearQueue();
+    viewQueue();
+    cout << "Jumlah antrian = " << countQueue() << endl;
+    return 0;
+}
 ```
+Program ini mengimplementasikan antrian menggunakan array dalam bahasa C++, memungkinkan penambahan dan penghapusan elemen, pengecekan status antrian (penuh atau kosong), penghitungan jumlah elemen, pengosongan antrian, dan penampilan isi antrian.
+
+### Output
+![alt text](<Cuplikan layar 2024-05-21 233958.png>)
+
+Program ini adalah implementasi antrian menggunakan linked list dalam bahasa C++ yang mendukung beberapa operasi penting: menambahkan elemen ke antrian (enqueue), menghapus elemen dari antrian (dequeue), menghitung jumlah elemen dalam antrian, menghapus semua elemen dalam antrian, dan menampilkan semua elemen yang ada di antrian. Program ini juga memeriksa apakah antrian kosong, namun tidak memiliki batasan ukuran karena menggunakan struktur linked list yang dinamis.
+
+### 2. Dari nomor 1 buatlah konsep antri dengan atribut Nama mahasiswa dan NIM Mahasiswa
+
+```C++
+// NAMA : MUHAMMAD RAGIEL PRASTYO
+// NIM  : 2311102183
+#include <iostream>
+using namespace std;
+
+struct Mahasiswa {
+    string nama;
+    string nim;
+    Mahasiswa* next;
+};
+
+Mahasiswa* front = nullptr; // Penanda antrian depan
+Mahasiswa* back = nullptr;  // Penanda antrian belakang
+
+// Fungsi pengecekan antrian penuh atau tidak
+bool isFull() {
+    return false; // Linked list tidak memiliki batas maksimal
+}
+
+// Fungsi pengecekan antrian kosong atau tidak
+bool isEmpty() {
+    return front == nullptr;
+}
+
+// Fungsi menambahkan antrian
+void enqueueAntrian(string nama, string nim) {
+    Mahasiswa* newNode = new Mahasiswa();
+    newNode->nama = nama;
+    newNode->nim = nim;
+    newNode->next = nullptr;
+
+    if (isEmpty()) {
+        front = newNode;
+        back = newNode;
+    } else {
+        back->next = newNode;
+        back = newNode;
+    }
+}
+
+// Fungsi mengurangi antrian
+void dequeueAntrian() {
+    if (isEmpty()) {
+        cout << "Antrian kosong" << endl;
+    } else {
+        Mahasiswa* temp = front;
+        front = front->next;
+        delete temp;
+    }
+}
+
+// Fungsi menghitung banyak antrian
+int countQueue() {
+    int count = 0;
+    Mahasiswa* temp = front;
+    while (temp != nullptr) {
+        count++;
+        temp = temp->next;
+    }
+    return count;
+}
+
+// Fungsi menghapus semua antrian
+void clearQueue() {
+    while (front != nullptr) {
+        Mahasiswa* temp = front;
+        front = front->next;
+        delete temp;
+    }
+    back = nullptr;
+}
+
+// Fungsi melihat antrian
+void viewQueue() {
+    cout << "Data antrian mahasiswa:" << endl;
+    Mahasiswa* temp = front;
+    int i = 1;
+    while (temp != nullptr) {
+        cout << i << ". Nama: " << temp->nama << ", NIM: " << temp->nim << endl;
+        temp = temp->next;
+        i++;
+    }
+}
+
+int main() {
+    enqueueAntrian("Ragiel", "2311102183");
+    enqueueAntrian("Prastyo", "2311102123");
+    viewQueue();
+    cout << "Jumlah antrian = " << countQueue() << endl;
+    dequeueAntrian();
+    viewQueue();
+    cout << "Jumlah antrian = " << countQueue() << endl;
+    clearQueue();
+    viewQueue();
+    cout << "Jumlah antrian = " << countQueue() << endl;
+    return 0;
+}
+```
+### Output
+![alt text](<Cuplikan layar 2024-05-21 234324.png>)
+
+Program ini adalah implementasi struktur data antrian menggunakan linked list dalam bahasa C++ untuk mengelola data mahasiswa. Program memungkinkan penambahan, penghapusan, dan pengelolaan data mahasiswa dengan fitur pengecekan apakah antrian kosong, penghitungan jumlah mahasiswa dalam antrian, dan tampilan seluruh isi antrian.
 
 ## Kesimpulan
+Queue adalah struktur data yang mengorganisir elemen-elemen dalam urutan FIFO (First In, First Out), mirip dengan antrean di supermarket. Prinsip dasarnya adalah elemen yang pertama dimasukkan akan menjadi yang pertama dikeluarkan. Queue penting dalam mengatur antrean tugas atau operasi dalam berbagai aplikasi komputasi. Operasi dasar pada Queue meliputi Enqueue (penambahan elemen), Dequeue (penghapusan elemen), IsEmpty (memeriksa apakah antrian kosong), IsFull (memeriksa apakah antrian penuh), Peek (mendapatkan nilai dari elemen depan tanpa menghapusnya), dan Initialize (membuat antrian kosong). Pemahaman tentang struktur data queue menjadi kunci untuk mengoptimalkan efisiensi dan kinerja aplikasi.
 
 ## Referensi
 [1] Rizki M. (2023, Nov. 29) Struktur Data Queue: Pengertian, Fungsi, dan Jenisnya [online]. Available : https://www.dicoding.com/blog/struktur-data-queue-pengertian-fungsi-dan-jenisnya/
