@@ -125,7 +125,7 @@ int main() {
     return 0;
 }
 ```
-
+Program ini mengimplementasikan antrian menggunakan array dalam bahasa C++, memungkinkan penambahan dan penghapusan elemen, pengecekan status antrian (penuh atau kosong), penghitungan jumlah elemen, pengosongan antrian, dan penampilan isi antrian.
 
 ## Unguided
 
@@ -228,8 +228,6 @@ int main() {
     return 0;
 }
 ```
-Program ini mengimplementasikan antrian menggunakan array dalam bahasa C++, memungkinkan penambahan dan penghapusan elemen, pengecekan status antrian (penuh atau kosong), penghitungan jumlah elemen, pengosongan antrian, dan penampilan isi antrian.
-
 ### Output
 ![alt text](<Cuplikan layar 2024-05-21 233958.png>)
 
