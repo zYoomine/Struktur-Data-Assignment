@@ -5,6 +5,7 @@
 
 ## Dasar Teori
 Searching dalam pemrograman adalah proses yang sangat fundamental Guna mencari data tertentu dalam sekumpulan data tentunya yang memiliki tipe yang sama. Pencarian diperlukan untuk mencari informasi khusus dari tabel / kumpulan data pada saat lokasi yang pasti dari informasi tersebut sebelumnya tidak diketahui. Data pada tabel biasanya disimpan dengan menggunakan tipe data Array yang dimana Array memungkinkan untuk menyimpan nilai yang bertipe sama.[1]
+
 Adapun Metode yang digunakan dalam Searching dalam Struktur Data sebagai berikut :
 
 ### a. Sequential Search
