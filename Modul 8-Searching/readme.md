@@ -21,7 +21,7 @@ Konsep Pencarian Sekuensial:
 
 Berikut adalah ilustrasi dari Sequential Search:
 
-![alt text](sequential-search-break.png)
+![alt text](binary-search.png)
 
 Ilustrasi di atas menunjukkan bagaimana proses dari algoritma pencarian Sekuensial. Algoritma ini mencari angka 2 dengan mengecek setiap elemen pada array. Ketika sudah ditemukan maka proses pencarian dapat diakhiri.[2]
 
