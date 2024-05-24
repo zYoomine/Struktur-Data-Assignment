@@ -21,7 +21,7 @@ Konsep Pencarian Sekuensial:
 
 Berikut adalah ilustrasi dari Sequential Search:
 
-![alt text](binary-search.png)
+![alt text](sequential-search-break.png)
 
 Ilustrasi di atas menunjukkan bagaimana proses dari algoritma pencarian Sekuensial. Algoritma ini mencari angka 2 dengan mengecek setiap elemen pada array. Ketika sudah ditemukan maka proses pencarian dapat diakhiri.[2]
 
@@ -41,7 +41,7 @@ Cara kerja Binary Search:
 
 Berikut adalah ilustrasi dari Binary Search:
 
-![alt text](<1 -bByttbKDCxvixnDbB2bRA.png>)
+![alt text](binary-search.png)
 
 Dalam binary search, langkah pertama adalah membagi panjang data dengan 2. Panjang data awal adalah 8, kemudian kita bagi 2, yang menghasilkan 4. Sekarang, kita lihat indeks ke-4 dari data, yaitu angka 9.
 
