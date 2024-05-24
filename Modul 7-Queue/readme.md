@@ -1,4 +1,4 @@
-# <h1 align="center">Laporan Praktikum Modul 6 Stack</h1>
+# <h1 align="center">Laporan Praktikum Modul 7 Queue</h1>
 <p align="center">Muhammad Ragiel Prastyo</p>
 <p align="center">2311102183</p>
 <p align="center">S1IF-11-E</p>
