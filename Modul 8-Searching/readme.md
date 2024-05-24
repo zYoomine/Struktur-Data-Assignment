@@ -11,10 +11,13 @@ Adapun Metode yang digunakan dalam Searching dalam Struktur Data sebagai berikut
 Sequential Search adalah salah satu algoritma pencarian data yang biasa digunakan untuk data yang berpola acak atau belum terurut. Algoritma ini akan mencari data sesuai kata kunci yang diberikan mulai dari elemen awal pada array hingga elemen akhir array. Kemungkinan terbaik (best case) ketika menggunakan algoritma ini adalah jika data yang dicari terletak di indeks awal array sehingga hanya membutuhkan sedikit waktu pencarian. Sedangkan kemungkinan terburuknya (worst case) adalah jika data yang dicari ternyata terletak dibagian akhir dari array sehingga pencarian data akan memakan waktu yang lama.
 
 Konsep Pencarian Sekuensial:
--> Membandingkan setiap elemen pada array satu per satu secara berurut.
--> Proses pencarian dimulai dari indeks pertama hingga indeks terakhir.
--> Proses pencarian akan berhenti apabila data ditemukan. Jika hingga akhir array data masih juga tidak ditemukan, maka proses pencarian tetap akan dihentikan.
--> Proses perulangan pada pencarian akan terjadi sebanyak jumlah N elemen pada array.
+- Membandingkan setiap elemen pada array satu per satu secara berurut.
+
+- Proses pencarian dimulai dari indeks pertama hingga indeks terakhir.
+
+- Proses pencarian akan berhenti apabila data ditemukan. Jika hingga akhir array data masih juga tidak ditemukan, maka proses pencarian tetap akan dihentikan.
+
+- Proses perulangan pada pencarian akan terjadi sebanyak jumlah N elemen pada array.
 
 Berikut adalah ilustrasi dari Sequential Search:
 ![alt text](sequential-search-break.png)
@@ -24,18 +27,18 @@ Ilustrasi di atas menunjukkan bagaimana proses dari algoritma pencarian Sekuensi
 Binary search adalah sebuah algoritma pencarian yang digunakan untuk mencari elemen tertentu dalam sebuah array atau daftar yang sudah diurutkan. Algoritma ini bekerja dengan membagi daftar menjadi dua bagian, kemudian memeriksa elemen tengahnya. Jika elemen yang dicari sama dengan elemen tengah ini, pencarian selesai. Jika tidak, algoritma akan menentukan apakah elemen yang dicari lebih besar atau lebih kecil dari elemen tengah, dan kemudian hanya memeriksa salah satu bagian dari daftar yang masih mungkin mengandung elemen yang dicari. Proses ini terus berlanjut hingga elemen yang dicari ditemukan atau daftar habis diperiksa.
 
 Cara kerja Binary Search:
-1. Tentukan Rentang Pencarian Awal: Di awal pencarian, kita memiliki seluruh daftar sebagai rentang pencarian. Rentang ini didefinisikan dengan dua indeks, yaitu awal dan akhir, yang mengacu pada elemen pertama dan terakhir dalam daftar.
+- Tentukan Rentang Pencarian Awal: Di awal pencarian, kita memiliki seluruh daftar sebagai rentang pencarian. Rentang ini didefinisikan dengan dua indeks, yaitu awal dan akhir, yang mengacu pada elemen pertama dan terakhir dalam daftar.
 
-2. Hitung Elemen Tengah: Temukan indeks tengah di dalam rentang pencarian dengan rumus tengah = (awal + akhir) / 2.
+- Hitung Elemen Tengah: Temukan indeks tengah di dalam rentang pencarian dengan rumus tengah = (awal + akhir) / 2.
 
-3. Periksa Elemen Tengah: Bandingkan elemen tengah dengan elemen yang ingin Anda cari. Jika elemen tengah sama dengan elemen yang dicari, maka pencarian selesai, dan Anda telah menemukan elemennya.
+- Periksa Elemen Tengah: Bandingkan elemen tengah dengan elemen yang ingin Anda cari. Jika elemen tengah sama dengan elemen yang dicari, maka pencarian selesai, dan Anda telah menemukan elemennya.
 
-4. Perkecil Rentang Pencarian: Jika elemen tengah lebih besar dari elemen yang dicari, maka Anda dapat memastikan bahwa elemen yang dicari hanya mungkin ada di sebelah kiri elemen tengah. Oleh karena itu, perkecil rentang pencarian menjadi antara awal dan tengah - 1. Jika elemen tengah lebih kecil, perkecil rentang menjadi antara tengah + 1 dan akhir.
+- Perkecil Rentang Pencarian: Jika elemen tengah lebih besar dari elemen yang dicari, maka Anda dapat memastikan bahwa elemen yang dicari hanya mungkin ada di sebelah kiri elemen tengah. Oleh karena itu, perkecil rentang pencarian menjadi antara awal dan tengah - 1. Jika elemen tengah lebih kecil, perkecil rentang menjadi antara tengah + 1 dan akhir.
 
-5. Ulangi Langkah 2–4: Ulangi proses ini sampai Anda menemukan elemen yang dicari atau rentang pencarian menjadi kosong.
+- Ulangi Langkah 2–4: Ulangi proses ini sampai Anda menemukan elemen yang dicari atau rentang pencarian menjadi kosong.
 
 Berikut adalah ilustrasi dari Binary Search:
-![alt text](<1 -bByttbKDCxvixnDbB2bRA.webp>)
+![alt text](<1 -bByttbKDCxvixnDbB2bRA.png>)
 Dalam binary search, langkah pertama adalah membagi panjang data dengan 2. Panjang data awal adalah 8, kemudian kita bagi 2, yang menghasilkan 4. Sekarang, kita lihat indeks ke-4 dari data, yaitu angka 9.
 
 Selanjutnya, kita bandingkan angka target (7) dengan hasil indeks ke-4 (9). Jika target lebih besar dari 9, maka angka [1, 3, 5, 7, 9] akan dihilangkan dari kumpulan data. Namun, jika target lebih kecil dari 9, maka angka [9, 11, 13, 15] akan dihilangkan. Proses ini terus berlanjut dengan data yang tersisa, hingga target menemukan angka yang sama dalam kumpulan data.[3]
@@ -340,12 +343,14 @@ int main() {
 ### Output
 ![alt text](<Cuplikan layar 2024-05-25 032231.png>)
 
-Program di atas akan menginisialisasi data, ukuran data, dan target yang akan dicari. Kemudian, program akan memanggil fungsi 'sequentialSearch' untuk mencari banyaknya target dalam data. Fungsi 'sequentialSearch' mengiterasi setiap elemen dalam data dan mengecek apakah elemen tersebut sama dengan target atau bukan. Jika elemen tersebut sama dengan target, fungsi akan menambahkan 1 ke variabel 'count'. Setelah selesai mengiterasi semua elemen, fungsi akan mengembalikan nilai 'count' sebagai jumlah kemunculan target dalam data.
+Program di atas akan menginisialisasi data, ukuran data, dan target yang akan dicari. Kemudian, program akan memanggil fungsi "sequentialSearch" untuk mencari banyaknya target dalam data. Fungsi 'sequentialSearch' mengiterasi setiap elemen dalam data dan mengecek apakah elemen tersebut sama dengan target atau bukan. Jika elemen tersebut sama dengan target, fungsi akan menambahkan 1 ke variabel 'count'. Setelah selesai mengiterasi semua elemen, fungsi akan mengembalikan nilai 'count' sebagai jumlah kemunculan target dalam data.
 Dalam fungsi 'main', setelah menginisialisasi data, ukuran data, dan target, program akan memanggil fungsi 'sequentialSearch' dan menyimpan hasilnya ke variabel 'jumlahKemunculan'. Kemudian, program akan menampilkan jumlah kemunculan target yang telah dicari.
 
 ## Kesimpulan
 Dalam pemrograman, searching (pencarian) adalah proses mencari data tertentu dalam suatu struktur data seperti array atau daftar. Dua metode pencarian yang umum digunakan adalah Sequential Search dan Binary Search.
+
 Sequential Search adalah metode pencarian yang membandingkan setiap elemen satu per satu dari awal hingga akhir array, berhenti ketika data yang dicari ditemukan atau saat seluruh array telah diperiksa. Cocok untuk data yang tidak terurut namun memiliki kelemahan dalam efisiensi waktu, terutama pada data besar.
+
 Sementara itu, Binary Search adalah teknik pencarian yang membagi array menjadi dua bagian, memeriksa elemen tengah, dan menentukan apakah data yang dicari berada di bagian kiri atau kanan. Proses ini terus berlanjut dengan memperkecil rentang pencarian hingga data ditemukan atau rentang menjadi kosong. Lebih efisien untuk data yang sudah terurut, namun memerlukan persyaratan array terurut sebelumnya.
 
 ## Referensi
