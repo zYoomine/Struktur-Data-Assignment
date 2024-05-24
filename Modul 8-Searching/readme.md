@@ -348,7 +348,6 @@ int main() {
 ![alt text](<Cuplikan layar 2024-05-25 032231.png>)
 
 Program di atas akan menginisialisasi data, ukuran data, dan target yang akan dicari. Kemudian, program akan memanggil fungsi `sequentialSearch` untuk mencari banyaknya target dalam data. Fungsi `sequentialSearch` mengiterasi setiap elemen dalam data dan mengecek apakah elemen tersebut sama dengan target atau bukan. Jika elemen tersebut sama dengan target, fungsi akan menambahkan 1 ke variabel `count`. Setelah selesai mengiterasi semua elemen, fungsi akan mengembalikan nilai `count` sebagai jumlah kemunculan target dalam data.
-
 Dalam fungsi `main`, setelah menginisialisasi data, ukuran data, dan target, program akan memanggil fungsi `sequentialSearch` dan menyimpan hasilnya ke variabel `jumlahKemunculan`. Kemudian, program akan menampilkan jumlah kemunculan target yang telah dicari.
 
 ## Kesimpulan
