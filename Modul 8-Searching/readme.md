@@ -20,7 +20,9 @@ Konsep Pencarian Sekuensial:
 - Proses perulangan pada pencarian akan terjadi sebanyak jumlah N elemen pada array.
 
 Berikut adalah ilustrasi dari Sequential Search:
+
 ![alt text](sequential-search-break.png)
+
 Ilustrasi di atas menunjukkan bagaimana proses dari algoritma pencarian Sekuensial. Algoritma ini mencari angka 2 dengan mengecek setiap elemen pada array. Ketika sudah ditemukan maka proses pencarian dapat diakhiri.[2]
 
 ### b. Binary Search 
@@ -38,7 +40,9 @@ Cara kerja Binary Search:
 - Ulangi Langkah 2–4: Ulangi proses ini sampai Anda menemukan elemen yang dicari atau rentang pencarian menjadi kosong.
 
 Berikut adalah ilustrasi dari Binary Search:
+
 ![alt text](<1 -bByttbKDCxvixnDbB2bRA.png>)
+
 Dalam binary search, langkah pertama adalah membagi panjang data dengan 2. Panjang data awal adalah 8, kemudian kita bagi 2, yang menghasilkan 4. Sekarang, kita lihat indeks ke-4 dari data, yaitu angka 9.
 
 Selanjutnya, kita bandingkan angka target (7) dengan hasil indeks ke-4 (9). Jika target lebih besar dari 9, maka angka [1, 3, 5, 7, 9] akan dihilangkan dari kumpulan data. Namun, jika target lebih kecil dari 9, maka angka [9, 11, 13, 15] akan dihilangkan. Proses ini terus berlanjut dengan data yang tersisa, hingga target menemukan angka yang sama dalam kumpulan data.[3]
@@ -303,8 +307,8 @@ int main() {
 ### Output
 ![alt text](<Cuplikan layar 2024-05-25 031650.png>)
 
-Program di atas akan meminta pengguna untuk memasukkan sebuah kalimat. Kemudian, program akan memanggil fungsi 'countVowels' untuk menghitung banyaknya huruf vokal dalam kalimat. Fungsi 'countVowels' mengiterasi setiap karakter dalam kalimat dan mengecek apakah karakter tersebut adalah huruf vokal atau bukan. Jika karakter tersebut adalah huruf vokal, fungsi akan menambahkan 1 ke variabel 'count'. Setelah selesai mengiterasi semua karakter, fungsi akan mengembalikan nilai 'count' sebagai jumlah huruf vokal.
-Dalam fungsi 'main', setelah meminta pengguna untuk memasukkan kalimat, program akan memanggil fungsi 'countVowels' dan menyimpan hasilnya ke variabel 'jumlahVokal'. Kemudian, program akan menampilkan jumlah huruf vokal yang telah dicari.
+Program di atas akan meminta pengguna untuk memasukkan sebuah kalimat. Kemudian, program akan memanggil fungsi `countVowels` untuk menghitung banyaknya huruf vokal dalam kalimat. Fungsi `countVowels` mengiterasi setiap karakter dalam kalimat dan mengecek apakah karakter tersebut adalah huruf vokal atau bukan. Jika karakter tersebut adalah huruf vokal, fungsi akan menambahkan 1 ke variabel `count`. Setelah selesai mengiterasi semua karakter, fungsi akan mengembalikan nilai `count` sebagai jumlah huruf vokal.
+Dalam fungsi `main`, setelah meminta pengguna untuk memasukkan kalimat, program akan memanggil fungsi `countVowels` dan menyimpan hasilnya ke variabel `jumlahVokal`. Kemudian, program akan menampilkan jumlah huruf vokal yang telah dicari.
 
 ### 3. Diketahui data = 9, 4, 1, 4, 7, 10, 5, 4, 12, 4. Hitunglah berapa banyak  angka 4 dengan menggunakan algoritma Sequential Search! 
 
@@ -343,8 +347,9 @@ int main() {
 ### Output
 ![alt text](<Cuplikan layar 2024-05-25 032231.png>)
 
-Program di atas akan menginisialisasi data, ukuran data, dan target yang akan dicari. Kemudian, program akan memanggil fungsi "sequentialSearch" untuk mencari banyaknya target dalam data. Fungsi 'sequentialSearch' mengiterasi setiap elemen dalam data dan mengecek apakah elemen tersebut sama dengan target atau bukan. Jika elemen tersebut sama dengan target, fungsi akan menambahkan 1 ke variabel 'count'. Setelah selesai mengiterasi semua elemen, fungsi akan mengembalikan nilai 'count' sebagai jumlah kemunculan target dalam data.
-Dalam fungsi 'main', setelah menginisialisasi data, ukuran data, dan target, program akan memanggil fungsi 'sequentialSearch' dan menyimpan hasilnya ke variabel 'jumlahKemunculan'. Kemudian, program akan menampilkan jumlah kemunculan target yang telah dicari.
+Program di atas akan menginisialisasi data, ukuran data, dan target yang akan dicari. Kemudian, program akan memanggil fungsi `sequentialSearch` untuk mencari banyaknya target dalam data. Fungsi `sequentialSearch` mengiterasi setiap elemen dalam data dan mengecek apakah elemen tersebut sama dengan target atau bukan. Jika elemen tersebut sama dengan target, fungsi akan menambahkan 1 ke variabel `count`. Setelah selesai mengiterasi semua elemen, fungsi akan mengembalikan nilai `count` sebagai jumlah kemunculan target dalam data.
+
+Dalam fungsi `main`, setelah menginisialisasi data, ukuran data, dan target, program akan memanggil fungsi `sequentialSearch` dan menyimpan hasilnya ke variabel `jumlahKemunculan`. Kemudian, program akan menampilkan jumlah kemunculan target yang telah dicari.
 
 ## Kesimpulan
 Dalam pemrograman, searching (pencarian) adalah proses mencari data tertentu dalam suatu struktur data seperti array atau daftar. Dua metode pencarian yang umum digunakan adalah Sequential Search dan Binary Search.
