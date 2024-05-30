@@ -4,7 +4,7 @@
 <p align="center">S1IF-11-E</p>
 
 ## Dasar Teori
-### Graph
+## Graph
 Graph adalah jenis struktur data umum yang susunan datanya tidak berdekatan satu sama lain (non-linier). Graph terdiri dari kumpulan simpul berhingga untuk menyimpan data dan antara dua buah simpul terdapat hubungan saling keterkaitan. Simpul pada graph disebut dengan verteks (V), sedangkan sisi yang menghubungkan antar verteks disebut edge (E). Pasangan (x,y) disebut sebagai edge, yang menyatakan bahwa simpul x terhubung ke simpul y.
 
 Sebagai contoh, terdapat graph seperti berikut:
@@ -12,14 +12,14 @@ Sebagai contoh, terdapat graph seperti berikut:
 
 Graph di atas terdiri atas 4 buah verteks dan 4 pasang sisi atau edge. Dengan verteks disimbolkan sebagai V, edge dilambangkan E, dan graph disimbolkan G.
 
-- Jenis-Jenis Graph
-
+### Jenis-Jenis Graph
 1. Undirected Graph
 Pada undirected graph, simpul-simpulnya terhubung dengan edge yang sifatnya dua arah. Misalnya kita punya simpul 1 dan 2 yang saling terhubung, kita bisa menjelajah dari simpul 1 ke simpul 2, begitu juga sebaliknya.
 ![alt text](181119493-ffb89970-8008-435b-b029-930746823071.png)
 
 2. Directed Graph
 Kebalikan dari undirected graph, pada graph jenis ini simpul-simpulnya terhubung oleh edge yang hanya bisa melakukan jelajah satu arah pada simpul yang ditunjuk.
+
 ![alt text](181119534-d982c311-43cb-4b4a-9699-de4e8e7ebffa.png)
 
 3. Weighted Graph
@@ -29,13 +29,12 @@ Weighted graph adalah jenis graph yang cabangnya diberi label bobot berupa bilan
 4. Unweighted Graph
 Berbeda dengan jenis sebelumnya, unweighted graph tidak memiliki properti bobot pada koneksinya. Graph ini hanya mempertimbangkan apakah dua node saling terhubung atau tidak.
 
-- Karakteristik Graph
-
+### Karakteristik Graph
 1. Jarak maksimum dari sebuah simpul ke semua simpul lainnya dianggap sebagai eksentrisitas dari simpul tersebut.
 2. Titik yang memiliki eksentrisitas minimum dianggap sebagai titik pusat dari graph.
 3. Nilai eksentrisitas minimum dari semua simpul dianggap sebagai jari-jari dari graph terhubung.[1]
 
-### Tree atau Pohon
+## Tree atau Pohon
 Dalam Struktur Data Konsep Tree mirip seperti pohon yaitu kumpulan node yang saling terhubung satu sama lain dalam suatu kesatuan yang membentuk layaknya struktur sebuah pohon. Struktur Tree adalah suatu cara merepresentasikan suatu struktur hirarki ( one — to many ) secara grafis yang mirip sebuah pohon, walaupun pohon tersebut hanya tampak sebagai kumpulan — node — node dari atas ke bawah. Konsep Tree Di seuah struktur data yang tidak linier yang menggambarkan hubungan yang hirarkis ( one to many ) dan tidak linier antara elemen — elemennya.
 
 Dalam Konsep Tree di sebuah Node ada namanya Node Root. Node Root dalam sebuah tree yang dimaksud adalah suatu node yang memiliki hirarki tertinggi dan dapat juga memiliki node — node anak atau yang disebut child node. jadi semua node yang dapat ditelurusan dari node root tersebut. Node Root dicirikan adalah suatu node khusus yang tercipta pertama kalinya. Sedangkan Node — Node lain dibawah node root saling terhubung satu sama lain disebut sebagai Subtree
@@ -48,14 +47,11 @@ Adapun Proses dari Implementasi Program terkait Konsep Tree seperti berikut :
 2. Data yang lebih kecil dari node root akan masuk dan menempati node kiri dari node Root.
 3. Jika ada Data yang lebih besar dari Node Root maka akan masuk dan menempati node sebelah kanan dari Node Root.
 
-- Operasi-Operasi pada Tree
 
+### Operasi-Operasi pada Tree
 1. Create() : Fungsi ini merupakan fungsi untuk membentuk sebuah tree baru yang kosong biasanya berisi inisialisasi variable tree yang bernilai Null.
-
 2. Clear() : Fungsi ini merupakan fungsi untuk menghapus semua elemen tree dalam implementasinya cukup tambahkan syntax pohon = NULL; dalam fungsi Clear().
-
 3. Empty() : Fungsi ini mengetahui apakah tree kosong atau tidak di sebuah pemrograman.
-
 4. Insert : Fungsi ini merupakan fungsi yang menambah node ke dalam tree secara rekursif.
 
 5. Traverse : Fungsi ini merupakan operasi kunjungan ( mengunjungi data ) terhadap node — node dalam tree yang dimana masing — masing node akan dikunjungi sekali. Adapun Jenis Traverse dalam Konsep Tree seperti berikut :
