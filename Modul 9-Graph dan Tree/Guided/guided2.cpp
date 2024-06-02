@@ -31,7 +31,7 @@ void buatNode(char data){
         root->right = NULL;
         root->parent = NULL;
         cout << "\n Node " << data << " berhasil dibuat sebagai root."
-             << endl;
+            << endl;
     }
     else
     {
@@ -115,7 +115,7 @@ void update(char data, Pohon *node)
             char temp = node->data;
             node->data = data;
             cout << "\n Node " << temp << " berhasil diubah menjadi "
-                 << data << endl;
+                << data << endl;
         }
     }
 }

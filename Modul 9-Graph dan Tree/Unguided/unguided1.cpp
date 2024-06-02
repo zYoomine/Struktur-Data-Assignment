@@ -3,55 +3,42 @@
 #include <iostream>
 #include <vector>
 #include <string>
-#include <iomanip>
-
 using namespace std;
 
-void displayMatrix(const vector<vector<int>>& matrix, const vector<string>& nodes) {
-    int n = nodes.size();
-    
-    cout << "   ";
-    for (int i = 0; i < n; ++i) {
-        cout << setw(4) << nodes[i];
-    }
-    cout << endl;
-
-    for (int i = 0; i < n; ++i) {
-        cout << setw(4) << nodes[i];
-        for (int j = 0; j < n; ++j) {
-            cout << setw(4) << matrix[i][j];
-        }
-        cout << endl;
-    }
-}
-
 int main() {
-    int n;
-    cout << "Silakan masukkan jumlah simpul: ";
-    cin >> n;
+    int jumlahSimpul_2311102183;
+    cout << "Silakan masukan jumlah simpul: ";
+    cin >> jumlahSimpul_2311102183;
 
-    vector<string> nodes(n);
-    vector<vector<int>> distanceMatrix(n, vector<int>(n, 0));
-
-    cout << "Silakan masukkan nama simpul:" << endl;
-    for (int i = 0; i < n; ++i) {
+    vector<string> simpul(jumlahSimpul_2311102183);
+    for (int i = 0; i < jumlahSimpul_2311102183; ++i) {
         cout << "Simpul " << i + 1 << " : ";
-        cin >> nodes[i];
+        cin >> simpul[i];
     }
 
-    cout << "Silakan masukkan bobot antar simpul" << endl;
-    for (int i = 0; i < n; ++i) {
-        for (int j = 0; j < n; ++j) {
-            if (i != j) {
-                cout << nodes[i] << "--> " << nodes[j] << " = ";
-                cin >> distanceMatrix[i][j];
-            } else {
-                distanceMatrix[i][j] = 0; // jarak ke diri sendiri adalah 0
-            }
+    vector<vector<int>> bobot(jumlahSimpul_2311102183, vector<int>(jumlahSimpul_2311102183));
+
+    cout << "Silakan masukkan bobot antar simpul\n";
+    for (int i = 0; i < jumlahSimpul_2311102183; ++i) {
+        for (int j = 0; j < jumlahSimpul_2311102183; ++j) {
+            cout << simpul[i] << "--> " << simpul[j] << " = ";
+            cin >> bobot[i][j];
         }
     }
 
-    displayMatrix(distanceMatrix, nodes);
+    cout << "\n   ";
+    for (const auto& s : simpul) {
+        cout << s << " ";
+    }
+    cout << "\n";
+
+    for (int i = 0; i < jumlahSimpul_2311102183; ++i) {
+        cout << simpul[i] << " ";
+        for (int j = 0; j < jumlahSimpul_2311102183; ++j) {
+            cout << bobot[i][j] << " ";
+        }
+        cout << "\n";
+    }
 
     return 0;
 }
